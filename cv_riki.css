@@ -10,10 +10,10 @@ html {
 
 body {
     -webkit-font-smoothing: antialiased;
-    background: #eaf1ea;
+    background: #f4f6f6;
     color: #111;
     counter-reset: sidenote-counter;
-    font: 1.4rem/2rem et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font: 21px/2rem Arial, sans-serif;
     height: 100%;
     margin: 0 auto;
     max-width: 1440px;
@@ -32,7 +32,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 3.2rem;
-    font-style: normal;
     margin-top: 2.1rem;
 }
 
@@ -67,7 +66,7 @@ a, a:visited {
 }
 
 a:hover, a:visited:hover {
-    color: #469a5a;
+    color: #005f5f;
 }
 
 blockquote {
@@ -215,4 +214,49 @@ nav ul.site-nav a, nav ul.site-nav a:visited {
 
 h2 a {
     text-decoration: none;
+}
+/************************************** $HOME PAGE /**************************************/
+.presentation {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.presentation img {
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+}
+
+.pres-text a, .highlight {
+    color: #008080;
+}
+
+.pres-text a:hover {
+    color: #005f5f;
+}
+
+/************************************** $CONTENT PAGES /**************************************/
+.banner {
+    height: auto;
+    width: 100%;
+}
+
+.title {
+    border-bottom: 1px solid #111;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.container {
+    padding-left: 5px;
+}
+
+.container > :first-child {
+    margin-top: 0;
+}
+
+.container + .container {
+    margin-top: 2rem;
 }
