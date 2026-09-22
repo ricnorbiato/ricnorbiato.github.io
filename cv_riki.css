@@ -242,6 +242,10 @@ h2 a {
     width: 100%;
 }
 
+article + article {
+    margin-top: 2em;
+}
+
 .title {
     border-bottom: 1px solid #111;
     font-size: 1.8rem;
@@ -259,4 +263,12 @@ h2 a {
 
 .container + .container {
     margin-top: 2rem;
+}
+
+.brief p {
+    margin: 0;
+}
+
+.brief p + p {
+    margin-top: 0.2rem;
 }
